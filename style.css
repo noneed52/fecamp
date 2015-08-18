@@ -9,6 +9,12 @@ p {
 /*    text-decoration: underline;*/
 }
 
+table, tr, td {
+    border: 0;
+    border-spacing: 0;
+    padding: 10px;
+}
+
 .front {
     color: red;
 }
