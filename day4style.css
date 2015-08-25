@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+.wrap:before {
+    content: ':before에 보여지는 내용입니다.';
+    color: #00f;
+}
+
+.wrap:after {
+    clear: both;
+    display: block;
+    content: '';
+    color: #f00;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px;
+}
+
+.gnb {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+/*    border: 20px solid #090;*/
+    border-width: 50px;
+    border-style: solid;
+    border-color: #090;
+    padding: 50px;
+    margin: 30px;
+    background-color: aqua;
+}
+
+.quizBox1 {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 10px;
+    border-style: solid;
+    background-color: aqua;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    z-index: 0;
+}
+
+.quizBox2 {
+    width: 300px;
+    height: 300px;
+/*    margin: 20px;*/
+/*
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+*/
+/*    margin: 20px 20px 20px 20px;*/
+    padding: 50px;
+    border-top: 5px solid;
+    border-right: 50px solid;
+    border-bottom: 15px solid;
+    border-left: 25px solid;
+/*    border: 50px;    */
+    border-style: solid;
+    background-color: aqua;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.layer1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fc0;
+    white-space: nowrap;
+}
+
+.layer2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fc0;
+    white-space: nowrap;
+}
+
+.go_top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: aqua;
+}
+
+.alpha {
+    font-size: 20px;
+    text-decoration: underline;
+    vertical-align: baseline;
+}
+
+.beta {
+    font-size: 15px;
+    text-decoration: underline;
+    vertical-align: bottom;
+}
+
+.theta {
+    font-size: 15px;
+    text-decoration: underline;
+    vertical-align: top;
+}
+
+.justify {
+    text-align: justify;
+    letter-spacing: 0;
+    word-spacing: 0;
+    white-space: nowrap;
+}

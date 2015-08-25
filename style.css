@@ -15,12 +15,12 @@ table, tr, td {
     padding: 10px;
 }
 
-.front {
-    color: red;
+.front { /*class 사용 */
+    border-color: aqua;
 }
 
-#end {
-    font-weight: bold
+#end { /*id 사용 */
+    background-color: coral;
 }
 
 a:link {
@@ -37,4 +37,16 @@ a:hover {
 
 a:active {
     color: rgba(23, 23, 23, 0.3);
+}
+
+a:focus { 
+    background-color: #999999; 
+}
+
+:checked {
+
+}
+
+:selected {
+    
 }

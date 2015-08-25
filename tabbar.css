@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+.tab_menu {
+    list-style-type: none;
+    padding-left: 0;
+    border-bottom: 2px solid #555;
+}
+
+.tab_menu:after {
+    clear: both;
+    display:block;
+    content: '';
+}
+
+li {
+    display: block;
+    float: left;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+a {
+    display: block;
+    width: 118px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 45px;
+    color: #555;
+    text-align: center;
+    text-decoration: none;
+}
+
+li:hover {
+    border-color: #555;
+}
+
+.tab_menu li:hover a {
+    background-color: #555;
+    color: #fff;
+}
+
+.other_size {
+    width: 158px;   
+}
