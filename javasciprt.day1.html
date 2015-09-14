@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>레이아웃</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+</head>
+
+<body>
+    <script language="javascript" type="text/javascript">
+        var arr1 = new Array();
+        var arr2 = new Array(10);
+        var arr3 = new Array(10, 20, 30);
+        var arr = [10, 20, 30];
+        arr[1] = 50;
+        console.log(arr1);
+        console.log(arr2);
+        console.log(arr3);
+        console.log(arr);
+        
+        var arr4 = [10, 20, 30];
+        var arr5 = [100, 200];
+        var arr6 = arr4.concat(arr5);
+        console.log(arr6);
+        
+        var str = arr.join("/");
+        console.log(str);
+        str = str.split("/");
+        console.log(str);
+        arr.pop();
+        console.log(arr);
+        
+        var obj = {
+            newProperty: "value",
+            "property": 123
+        };
+        
+        function 두배(arg) {
+            return arg * 2;  
+        };
+        var num = 두배(3);
+        console.log(num);
+        var x2 = 두배;
+        var num2 = x2(5);
+        console.log(num2);
+        
+        var a = (function(arg) {
+            return arg * 2;
+        })(6);
+        console.log(a);
+        
+        function run(fn) {
+            return fn(5);
+        }
+        a = run(function(n){ return n * 3});
+        console.log(a);
+        function triple(n) {
+            return n * 3;
+        }
+        a = run(triple);
+        console.log(a);
+        
+        function outer(arg) {
+            var arg, value;
+            console.log(value);
+            function inner() {
+//                return arg + "name";
+                return arg + name;
+//                return arg + ajsdf;
+            }
+            value = "hello";
+            return inner;
+        }
+        var name = "kim";
+        var func = outer(name);
+        console.log(func());
+        function func2(arg) {
+            console.log(arguments);
+            return arg;
+        }
+        console.log(func2("hello", "sjdkf"));
+        
+        function MyClass() {
+            
+        }
+        
+        console.log(null == undefined);
+        console.log(null === undefined);
+        console.log("0" == 0);
+        console.log("0" === 0);
+        function maxMin(min, max) {
+            return Math.random()*(max-min)+min;
+        }
+        console.log(maxMin(10, 100));
+        var birthday = new Date();
+        console.log(birthday.getYear());
+        console.log(birthday.getMonth());
+        console.log(birthday.getFullYear());
+        function returnDay(arg) {
+            var dayArr = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+            return dayArr[arg.getDay()];
+        }
+        var todayDate = new Date();
+        console.log(returnDay(todayDate));
+    </script>
+</body>
+</html>

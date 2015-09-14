@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>6주차 숙제</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+</head>
+
+<body>
+    <script language="javascript" type="text/javascript">
+        var numbers = [100, 200, 300];
+        var strings = ["100", "200", "300"];
+        var nested = [numbers, strings];
+        console.log(nested);
+        var 수강생 = {
+            "이름": "재성",
+            "성별": "남자",
+            "개발자": true
+        }
+        function 원소(arr, index) {
+            return arr[index];
+        };
+        console.log(원소(numbers, 0));
+        function 세제곱(num) {
+            return Math.pow(num, 3);
+        };
+        console.log(세제곱(2));
+        function 날짜(date) {
+            return date.getFullYear() + "년 " + (date.getMonth()+1) + "월 " + date.getDate() + "일" + " (" + "일월화수목금토"[date.getDay()] + ")";
+        };
+        console.log(날짜(new Date()));
+    </script>
+</body>
+</html>
